@@ -27,6 +27,8 @@ urlpatterns = [
     path('contact',include('Home_app.urls')),
     path('news',include('Home_app.urls')),
     path('news-detail',include('Home_app.urls')),
+    path('franchise',include('Home_app.urls')),
+    path('review',include('Home_app.urls')),
 
    
 ]

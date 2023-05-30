@@ -1,0 +1,29 @@
+
+
+{% extends 'base.html' %}
+
+{% block body %}
+<form class="booking-form row" role="form" action="/review" method="post">
+  {% csrf_token %}
+  <div class="col-lg-6 col-12">
+      <label for="name" class="form-label">Full Name</label>
+
+      <input type="text" name="name" id="name" class="form-control" placeholder="Your Name" required>
+  </div>
+
+  <div class="col-lg-6 col-12">
+      <label for="Food" class="form-label">Food</label>
+
+      <input type="text" name="food" id="food" class="form-control" placeholder="Pizza , burger etc">
+  </div>
+  <div class="col-12">
+      <label for="Review" class="form-label">Review</label>
+
+      <textarea class="form-control" rows="4" id="review" name="review" placeholder=""></textarea>
+  </div>
+
+  <div class="col-lg-4 col-12 ms-auto">
+      <button type="submit" class="form-control">Submit Request</button>
+  </div>
+</form>
+{% endblock body %}
