@@ -15,7 +15,7 @@ class  Reservations(models.Model):
 
 
 class Review(models.Model):
-    name=models.CharField(max_length=55)
+    name=models.CharField(max_length=45)
     food=models.CharField(max_length=55)
     review=models.TextField()
     
